@@ -51,7 +51,7 @@ Where `-h` is used to hide the file name
 &emsp; &emsp;&emsp;`-A` for displaying the line after the search keyword and the lines after, depending on the number follows <br> 
 &emsp;&emsp;  &emsp;   `1` number of lines to display after the line match <br>   
 
-  <img width="624" height="220" alt="Picture3" src="https://github.com/user-attachments/assets/707fd174-9ef8-4df1-b6fa-45b6344ba6f5" />
+  <img width="624"  alt="Picture3" src="https://github.com/user-attachments/assets/707fd174-9ef8-4df1-b6fa-45b6344ba6f5" />
   <br>
   <br>
   
@@ -64,15 +64,15 @@ Where `-h` is used to hide the file name
 
 > ![](https://img.shields.io/badge/Question-blue) **What is the redirection URL to the phishing page for the individual Zoe Duncan? (defanged format)**
 #### For this question, we have to open the email sent to Zoe and download the attached html to inspect it 
-<img width="1795" height="910" alt="Screenshot 2026-01-18 175342" src="https://github.com/user-attachments/assets/e0be1594-7286-4eef-a214-3aff404add25" />
-<img width="1798" height="875" alt="Screenshot 2026-01-18 175412" src="https://github.com/user-attachments/assets/da8fb663-f7ff-4d8c-999f-8cebc27fa606" />
+<img width="1795" alt="Screenshot 2026-01-18 175342" src="https://github.com/user-attachments/assets/e0be1594-7286-4eef-a214-3aff404add25" />
+<img width="1798" alt="Screenshot 2026-01-18 175412" src="https://github.com/user-attachments/assets/da8fb663-f7ff-4d8c-999f-8cebc27fa606" />
 
 <br><br>
 Now, the html file must be inspected for any url inside it, which can be done through the commnad 
 ```bash
 grep "http[^ ]" *.html
 ```
-<img width="1132" height="337" alt="Screenshot 2026-01-18 175932" src="https://github.com/user-attachments/assets/2fecd1a0-3253-4df7-b2e4-30704c38a282" />
+<img width="1132"  alt="Screenshot 2026-01-18 175932" src="https://github.com/user-attachments/assets/2fecd1a0-3253-4df7-b2e4-30704c38a282" />
 <br> 
 <br>
 So the URL is:   
@@ -162,7 +162,7 @@ http://kennaroads.buzz/data
 
 a `log.txt` file is seen, open it and try to look up for repeated email or password     
 
-<img width="975" height="472" alt="image" src="https://github.com/user-attachments/assets/1c7fb47b-d887-417a-8015-05320392bb11" />  
+<img width="975"  alt="image" src="https://github.com/user-attachments/assets/1c7fb47b-d887-417a-8015-05320392bb11" />  
 
 > ![](https://img.shields.io/badge/Answer-success) michael.ascot@swiftspend.finance
 <br>
@@ -183,7 +183,7 @@ Then Unzip it using the command
 unzip Update365.zip
 ```
 
-<img width="1289" height="776" alt="image" src="https://github.com/user-attachments/assets/35f93b98-3539-4862-b259-c185e12e83cd" />
+<img width="1289"  alt="image" src="https://github.com/user-attachments/assets/35f93b98-3539-4862-b259-c185e12e83cd" />
 
   The file that collects emails and send it have the word send in it for sure and is in the Update365 folder, so searching for files that contain the send keyword using the command  
   ```bash
@@ -191,11 +191,11 @@ grep -r "*send"
 ```
 we found  
 
-<img width="1134" height="341" alt="image" src="https://github.com/user-attachments/assets/fa5c1788-f72f-4d80-985b-d78edfb768f2" />   
+<img width="1134" alt="image" src="https://github.com/user-attachments/assets/fa5c1788-f72f-4d80-985b-d78edfb768f2" />   
 
   The submit.php is the file responsible for the submit button, to further investigate it we tunneled the command with cat
-<img width="975" height="23" alt="image" src="https://github.com/user-attachments/assets/75cc76b2-1453-4bab-a78b-d8112be8b627" />
-<img width="975" height="746" alt="image" src="https://github.com/user-attachments/assets/dd1122d7-87e0-4335-a413-37ad673aaa00" />
+<img width="975"  alt="image" src="https://github.com/user-attachments/assets/75cc76b2-1453-4bab-a78b-d8112be8b627" />
+<img width="975" alt="image" src="https://github.com/user-attachments/assets/dd1122d7-87e0-4335-a413-37ad673aaa00" />
 <br>
 
 
@@ -211,7 +211,7 @@ Here, another suspicious email is found, and the responses are sent to whom is
 ```bash
 grep -r "@gmail.com"
 ```
-<img width="1319" height="770" alt="image" src="https://github.com/user-attachments/assets/88218dd2-ad78-4a3f-bb85-7f103140ebc8" />
+<img width="1319"  alt="image" src="https://github.com/user-attachments/assets/88218dd2-ad78-4a3f-bb85-7f103140ebc8" />
 <br>
 <br>
 
@@ -224,15 +224,15 @@ grep -r "@gmail.com"
 > ![](https://img.shields.io/badge/Question-blue) **What is the hidden flag?**
 
 Reading the instruction for this one :   
-<img width="651" height="160" alt="image" src="https://github.com/user-attachments/assets/6a401184-e86a-4eba-aa40-fbc8d4539d84" />  
+<img width="651" alt="image" src="https://github.com/user-attachments/assets/6a401184-e86a-4eba-aa40-fbc8d4539d84" />  
 
   Then the flag is a text file that is a subdomain or a directory of the phishing URL, since there is no enumeration tool in the VM like Gobuster, I guessed its called `flag.txt`   
   so I tried this directory in the URL :   
-  <img width="975" height="281" alt="image" src="https://github.com/user-attachments/assets/42596687-eee8-4ac9-a91e-5ada5691f5e9" />
+  <img width="975"  alt="image" src="https://github.com/user-attachments/assets/42596687-eee8-4ac9-a91e-5ada5691f5e9" />
   <br> 
   So the flag is found, but it seems to be encoded. For that, we will use CyberChef to decode it back 
 
-  <img width="975" height="471" alt="image" src="https://github.com/user-attachments/assets/53228822-dc45-47b2-9479-ef89ee5fd601" />
+  <img width="975"  alt="image" src="https://github.com/user-attachments/assets/53228822-dc45-47b2-9479-ef89ee5fd601" />
   <br>
   <br>
   
