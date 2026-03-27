@@ -6,4 +6,4 @@ layout: default
 Welcome to my cybersecurity portfolio. 
 
 ## Challenges
-* [Snapped Phish-ing Line](./TryHackMe/Challenges/Snapped-Phish-ing-Line.html)
+* [Snapped Phish-ing Line](./Walkthroughs/Snapped-Phish-ing-Line.html)
