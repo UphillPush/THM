@@ -1,5 +1,5 @@
 # Snapped-Phish-ing-Line
-<img width="1903" height="456" alt="header" src="https://github.com/user-attachments/assets/3cd4145c-8211-42ce-88f9-a5e57fbf2d84" />
+<img width="1903"  alt="header" src="https://github.com/user-attachments/assets/3cd4145c-8211-42ce-88f9-a5e57fbf2d84" />
 
 ## An Ordinary Midsummer Day...
 
