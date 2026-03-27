@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 # My TryHackMe Write-ups
 Welcome to my cybersecurity portfolio. 
 
