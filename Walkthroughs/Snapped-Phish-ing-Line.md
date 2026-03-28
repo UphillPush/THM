@@ -1,3 +1,10 @@
+---
+layout: post
+title: Snapped Phish-ing Line
+redirect_from:
+  - /THM/TryHackMe/Challenges/Snapped-Phish-ing-Line.html
+---
+
 # Snapped-Phish-ing-Line
 <img width="1903"  alt="header" src="https://github.com/user-attachments/assets/3cd4145c-8211-42ce-88f9-a5e57fbf2d84" />
 
