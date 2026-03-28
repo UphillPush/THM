@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: Snapped Phish-ing Line
 redirect_from: 
   - /TryHackMe/Challenges/Snapped-Phish-ing-Line.html
