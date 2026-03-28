@@ -3,6 +3,7 @@ layout: post
 title: Snapped Phish-ing Line
 redirect_from:
   - /THM/TryHackMe/Challenges/Snapped-Phish-ing-Line.html
+  - /THM/TryHackMe/Challenges/Snapped-Phish-ing-Line
 ---
 
 # Snapped-Phish-ing-Line
