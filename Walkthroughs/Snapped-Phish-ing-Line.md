@@ -1,10 +1,13 @@
 ---
 layout: default
-title: Snapped Phish-ing Line
+title: "TryHackMe: Snapped Phish-ing Line Walkthrough"
+description: "Detailed solution and walkthrough for the Snapped Phish-ing Line challenge on TryHackMe."
+
 redirect_from: 
   - /TryHackMe/Challenges/Snapped-Phish-ing-Line.html
   - /TryHackMe/Challenges/Snapped-Phish-ing-Line
 ---
+
 
 # Snapped-Phish-ing-Line
 <img width="1903"  alt="header" src="https://github.com/user-attachments/assets/3cd4145c-8211-42ce-88f9-a5e57fbf2d84" />
