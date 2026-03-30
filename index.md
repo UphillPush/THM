@@ -9,4 +9,4 @@ Welcome to my cybersecurity portfolio.
 * [Snapped Phish-ing Line](./Walkthroughs/Snapped-Phish-ing-Line.md)
 
 ## Challenges
-* [Snapped Phish-ing Line](./Challenges/Shadow%20Trace.html)
+* [Shadow Trace](./Challenges/Shadow%20Trace.html)
