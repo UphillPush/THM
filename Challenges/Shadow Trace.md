@@ -6,7 +6,7 @@ description: "Detailed solution and walkthrough for the Shadow Trace challenge o
 
 
 # Shadow Trace
-<img width="1908" height="247" alt="image" src="https://github.com/user-attachments/assets/f232b05c-2698-4c0c-9e59-741755855143" />
+<img width="1908"  alt="image" src="https://github.com/user-attachments/assets/f232b05c-2698-4c0c-9e59-741755855143" />
 
 ## File Analysis
 
@@ -24,19 +24,19 @@ You can find several tools installed in the machine that can help you with any k
 
 
 
-#### To Find the architecture pestudio tool is used to analyze the file
+#### To find the architecture, the pestudio tool is used to analyze the file
 I found it in this path and opened the file windows-update.exe with it
 
-<img width="1919" height="566" alt="image" src="https://github.com/user-attachments/assets/fba5fd06-2593-4de8-a426-81046219663c" />
+<img width="1919"  alt="image" src="https://github.com/user-attachments/assets/fba5fd06-2593-4de8-a426-81046219663c" />
 
 <br>
 <br>
 
-<img width="1770" height="815" alt="image" src="https://github.com/user-attachments/assets/a261e987-f744-4151-a59d-51e382c4cde2" />
+<img width="1770" alt="image" src="https://github.com/user-attachments/assets/a261e987-f744-4151-a59d-51e382c4cde2" />
 <br>
 <br>
 
-<img width="1917" height="820" alt="image" src="https://github.com/user-attachments/assets/107da2cc-98d8-49ef-be18-542151da3ee3" />
+<img width="1917"  alt="image" src="https://github.com/user-attachments/assets/107da2cc-98d8-49ef-be18-542151da3ee3" />
 
 <br>
 <br>
@@ -49,7 +49,7 @@ I found it in this path and opened the file windows-update.exe with it
 <br>
 
 > ![](https://img.shields.io/badge/Question-blue) **What is the hash (sha-256) of the file windows-update.exe?**
-<img width="1919" height="322" alt="image" src="https://github.com/user-attachments/assets/5e734e1a-ba7e-4c65-803e-040b277bb625" />
+<img width="1919"  alt="image" src="https://github.com/user-attachments/assets/5e734e1a-ba7e-4c65-803e-040b277bb625" />
 
   <br>
   <br>
@@ -62,7 +62,7 @@ I found it in this path and opened the file windows-update.exe with it
 <br>
 
 > ![](https://img.shields.io/badge/Question-blue) **Identify the URL within the file to use it as an IOC**
-<img width="1919" height="615" alt="image" src="https://github.com/user-attachments/assets/3ddd959d-7374-4eca-a6d2-aa67ea69b6d2" />
+<img width="1919"  alt="image" src="https://github.com/user-attachments/assets/3ddd959d-7374-4eca-a6d2-aa67ea69b6d2" />
 
 <br> 
 <br> 
@@ -74,10 +74,10 @@ I found it in this path and opened the file windows-update.exe with it
 <br>
 
 > ![](https://img.shields.io/badge/Question-blue) **With the URL identified, can you spot a domain that can be used as an IOC?**
-#### This can be found in the file windows-update.exe file itself, and since the URL is almost the same (the difference is just the domain), I searched for the word "tryhatme" as a string in the file using   
+#### This can be found in the file windows-update.exe itself, and since the URL is almost the same (the difference is just the domain), I searched for the word "tryhatme" as a string in the file using   
 `strings ./windows-update.exe | findstr "tryhatme"` as shown: 
 
-<img width="1711" height="224" alt="image" src="https://github.com/user-attachments/assets/68e31028-f45c-4745-9e95-0c5c7c0d5172" />
+<img width="1711"  alt="image" src="https://github.com/user-attachments/assets/68e31028-f45c-4745-9e95-0c5c7c0d5172" />
 
 
 <br>
@@ -93,7 +93,7 @@ I found it in this path and opened the file windows-update.exe with it
 > ![](https://img.shields.io/badge/Question-blue) **Input the decoded flag from the suspicious domain**
 #### There are 2 suspicious domains shown in the image from previous questions, the first one had a code at the end of the link. I used CyberChef to convert this code from Base64, and it displayed this flag 
 <br> 
-<img width="1917" height="655" alt="image" src="https://github.com/user-attachments/assets/b5614c54-9436-4813-a1b5-863345642704" />
+<img width="1917"  alt="image" src="https://github.com/user-attachments/assets/b5614c54-9436-4813-a1b5-863345642704" />
 <br> 
 <br> 
 
@@ -105,9 +105,9 @@ I found it in this path and opened the file windows-update.exe with it
 <br>
 
 > ![](https://img.shields.io/badge/Question-blue) **When was the phishing kit archive first submitted? (format: YYYY-MM-DD HH:MM:SS UTC)**
-#### Returning to pestudio, there is a library tab that shows the libraries that the file uses, for the socket communication, it uses WS2_32.dll  
+#### Returning to pestudio, there is a library tab that shows the libraries that the file uses. For the socket communication, it uses WS2_32.dll  
 <br> 
-<img width="1919" height="612" alt="image" src="https://github.com/user-attachments/assets/91e43251-a890-48a6-9072-a9cc483c7d45" />
+<img width="1919"  alt="image" src="https://github.com/user-attachments/assets/91e43251-a890-48a6-9072-a9cc483c7d45" />
 <br>
 <br> 
 
@@ -122,15 +122,15 @@ I found it in this path and opened the file windows-update.exe with it
 ## Answer the questions below
 
 > ![](https://img.shields.io/badge/Question-blue) **Can you identify the malicious URL from the trigger by the process powershell.exe?**
-#### From the site viewed, there are two alerts, in the alert that includes powershell.exe, the command has a suspicoius Base64 code
+#### From the site viewed, there are two alerts. In the alert that includes powershell.exe, the command has a suspicious Base64 code
 <br> 
-<img width="1341" height="788" alt="image" src="https://github.com/user-attachments/assets/57eb6d77-ca7b-4bf3-9d9f-97ad62e66325" />
+<img width="1341"  alt="image" src="https://github.com/user-attachments/assets/57eb6d77-ca7b-4bf3-9d9f-97ad62e66325" />
 <br>
 <br>
 Converting this code back from base64 using CyberChef
 <br>
 <br>
-<img width="1914" height="633" alt="image" src="https://github.com/user-attachments/assets/fff8b866-36d6-465a-ae94-f3773b0a8b54" />
+<img width="1914"  alt="image" src="https://github.com/user-attachments/assets/fff8b866-36d6-465a-ae94-f3773b0a8b54" />
 <br>
 <br>
 
@@ -141,15 +141,15 @@ Converting this code back from base64 using CyberChef
 <br>
 
 > ![](https://img.shields.io/badge/Question-blue) **Can you identify the malicious URL from the alert triggered by chrome.exe?**
-#### In the second Alert, there is a milicious decimal places separated by commas that indicate a decimal conversion 
+#### In the second Alert, there are malicious decimal places separated by commas that indicate a decimal conversion 
 <br>
-<img width="1351" height="882" alt="image" src="https://github.com/user-attachments/assets/55939834-ac91-41c6-a3f2-c9825b6ac307" />
+<img width="1351"  alt="image" src="https://github.com/user-attachments/assets/55939834-ac91-41c6-a3f2-c9825b6ac307" />
 <br>
 <br>
 Converting them back using CyberCef using the from Decimal conversion and choosing the comma as a delimiter
 <br>
 <br>
-<img width="1917" height="636" alt="image" src="https://github.com/user-attachments/assets/8c63515c-ef68-46f2-86fd-105742e3c088" />
+<img width="1917"  alt="image" src="https://github.com/user-attachments/assets/8c63515c-ef68-46f2-86fd-105742e3c088" />
 <br>
 <br>
 
@@ -162,7 +162,7 @@ Converting them back using CyberCef using the from Decimal conversion and choosi
 > ![](https://img.shields.io/badge/Question-blue) **What's the name of the file saved in the alert triggered by chrome.exe?**
 #### Looking back at the chrome.exe alert command to search for any files, test.txt was found  
 <br>
-<img width="1309" height="715" alt="image" src="https://github.com/user-attachments/assets/7cc2be13-ec27-47aa-93c3-beac4a8c0e91" />
+<img width="1309"  alt="image" src="https://github.com/user-attachments/assets/7cc2be13-ec27-47aa-93c3-beac4a8c0e91" />
 
 <br>
 <br>
