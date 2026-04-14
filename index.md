@@ -10,3 +10,5 @@ Welcome to my cybersecurity portfolio.
 
 ## Challenges
 * [Shadow Trace](./Challenges/Shadow%20Trace.html)
+* [Boogeyman 2](./Challenges/Boogeyman%202.html)
+
